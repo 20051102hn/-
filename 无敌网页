@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>综合布局实践</title>
+    <style>
+        /* 全局基础重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none; /* 清除a标签默认下划线 */
+        }
+
+        /* 1. 导航栏样式 */
+        .nav {
+            background-color: #333;
+        }
+        .nav a {
+            display: inline-block; /* 让a标签可设置宽高和padding */
+            color: #fff;
+            padding: 15px 20px; /* 导航项内边距 */
+            font-size: 16px;
+        }
+        /* 鼠标悬浮效果 */
+        .nav a:hover {
+            background-color: #1890ff; /* 背景色变化 */
+            text-decoration: underline; /* 添加下划线 */
+        }
+
+        /* 2. 信息卡片样式 */
+        .card {
+            width: 500px; /* 固定宽度 */
+            margin: 30px auto; /* 上下外边距30px，左右auto实现水平居中 */
+            padding: 25px; /* 内边距 */
+            background-color: #f8f9fa; /* 浅色背景 */
+            border: 1px solid #eee;
+            border-radius: 8px; /* 圆角边框 */
+        }
+        /* 卡片标题样式 */
+        .card h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        /* 卡片正文样式 */
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏部分 -->
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">产品</a>
+        <a href="#">服务</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+    </div>
+
+    <!-- 信息卡片部分 -->
+    <div class="card">
+        <h2>关于我们</h2>
+        <p>这是一段简介文字，用于展示信息卡片的内容效果。我们是一家专注于前端教学的团队，致力于用通俗易懂的方式讲解HTML、CSS等基础知识，帮助大家快速入门网页开发。</p>
+    </div>
+</body>
+</html>
